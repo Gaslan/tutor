@@ -1,0 +1,113 @@
+body{
+    background: #fbfbfb;
+}
+
+.main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.side-panel{
+    position: absolute;
+    left: -300px;
+    top: 0px;
+    bottom: 0px;
+    width: 300px;
+    background: #f0f0f0;
+    z-index: 10;
+    -webkit-transition: left 250ms ease;
+    -moz-transition: left 250ms ease;
+    -o-transition: left 250ms ease;
+    transition: left 250ms ease;
+    overflow-y: scroll;
+}
+
+.side-panel .menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side-panel .menu ul.sub-menu{
+    margin-left: 10px;
+}
+
+.side-panel .menu ul li a{
+    display: block;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-bottom: none;
+    color: #364149;
+    background: 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.side-panel .menu ul li.lev-1 a{
+    font-weight: 700;
+}
+
+.side-panel .menu ul li.lev-2 a{
+    font-weight: 400;
+}
+
+.side-panel-opened .side-panel{
+    left: 0px;
+}
+
+section.content-panel{
+    margin: 0px auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    overflow-y: auto;
+}
+
+.side-panel-opened .content-panel{
+    left: 300px;
+}
+
+section.content-panel .content{
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+section.content-panel .top-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 50px;
+    background: #f0f0f0;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+section.content-panel .top-menu a{
+    display: block;
+    line-height: 50px;
+   padding: 0px 21px;
+}
+
+section.content-panel .top-menu a:hover{
+    background: #218be0;
+}
+
+
+section.content-panel p{
+    line-height: 2.2;
+}
+
+section.content-panel img{
+    width: 100%;
+}
+
+code{
+    background: #f0f0f0;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
